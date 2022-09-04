@@ -27,6 +27,50 @@ body {
     width: fit-content;
 }
 
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 230px;
+    opacity: 0.75;
+}
+
+.btn-black {
+    background: white;
+    color: black;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.border-white {
+    border: 1px solid white !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
