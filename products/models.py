@@ -24,8 +24,6 @@ class Product(models.Model):
     """
     Products model that will return products
     """
-
-class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField()
