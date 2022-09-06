@@ -4,11 +4,11 @@
             <a class="logo-font nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Watches
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-3" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Watches</a>
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
             </div>
         </li>
 
@@ -16,11 +16,13 @@
             <a class="logo-font nav-link text-white mr-5" href="#" id="mens-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Men's Watches
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="mens-link">
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
+            <div class="dropdown-menu border-3" aria-labelledby="mens-link">
+                <a href="{% url 'products' %}?category=fossil_mens" class="dropdown-item">Fossil</a>
+                <a href="{% url 'products' %}?category=citizen_mens" class="dropdown-item">Citizen</a>
+                <a href="{% url 'products' %}?category=tommy_hilfiger_mens" class="dropdown-item">Tommy Hilfiger</a>
+                <a href="{% url 'products' %}?category=garmin_mens" class="dropdown-item">Garmin</a>
+                <a href="{% url 'products' %}?category=tissot_mens" class="dropdown-item">Tissot</a>
+                <a href="{% url 'products' %}?category=emporio_armani_mens" class="dropdown-item">Emporio Armani</a>
             </div>
         </li>
 
@@ -28,10 +30,13 @@
             <a class="logo-font nav-link text-white mr-5" href="#" id="ladies-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Ladies' Watches
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="ladies-link">
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
+            <div class="dropdown-menu border-3" aria-labelledby="ladies-link">
+                <a href="{% url 'products' %}?category=fossil_ladies" class="dropdown-item">Fossil</a>
+                <a href="{% url 'products' %}?category=citizen_ladies" class="dropdown-item">Citizen</a>
+                <a href="{% url 'products' %}?category=tommy_hilfiger_ladies" class="dropdown-item">Tommy Hilfiger</a>
+                <a href="{% url 'products' %}?category=garmin_ladies" class="dropdown-item">Garmin</a>
+                <a href="{% url 'products' %}?category=tissot_ladies" class="dropdown-item">Tissot</a>
+                <a href="{% url 'products' %}?category=emporio_armani_ladies" class="dropdown-item">Emporio Armani</a>
             </div>
         </li>
 
@@ -39,6 +44,10 @@
             <a class="logo-font nav-link text-white" href="#" id="outlet-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Outlet
             </a>
+            <div class="dropdown-menu border-3" aria-labelledby="outlet-link">
+                <a href="{% url 'products' %}?category=outlet_mens" class="dropdown-item">Outlet Mens</a>
+                <a href="{% url 'products' %}?category=outlet_ladies" class="dropdown-item">Outlet Ladies</a>
+            </div>
         </li>
     </ul>
 </div>
