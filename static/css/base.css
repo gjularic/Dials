@@ -24,6 +24,10 @@ body {
     text-transform: uppercase;
 }
 
+.main-logo {
+    font-size: 2.5rem;
+}
+
 .main-logo-link {
     width: fit-content;
 }

@@ -50,7 +50,7 @@
     <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font text-white my-0">Dials</h2>
+          <h2 class="main-logo logo-font text-white my-0">Dials</h2>
         </a>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -92,7 +92,7 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-cart-arrow-down fa-lg"></i></div>
                 <p class="my-0">
