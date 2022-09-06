@@ -39,6 +39,11 @@ body {
     opacity: 0.75;
 }
 
+.btn-black {
+    background: white;
+    color: black;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important;
