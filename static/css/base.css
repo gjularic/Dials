@@ -71,6 +71,10 @@ body {
     color: #fff !important;
 }
 
+.bag-icon-col {
+    color: rgb(47, 216, 47) !important;
+}
+
 .border-white {
     border: 1px solid white !important;
 }
