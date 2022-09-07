@@ -39,7 +39,7 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated product quantity in bag')
+        messages.success(request, f'Updated {product.name} quantity in bag')
     elif quantity > 0:
         del bag[item_id]
         if not bag[item_id]:
@@ -54,7 +54,7 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """ Remove item from the shopping bag """
-    
+
     try:
         product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
